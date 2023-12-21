@@ -1,27 +1,31 @@
-import {
-  View,
-  Button,
-  StyleSheet,
-  Text,
-  FlatList,
-  TouchableOpacity,
-  Alert,
-  Modal,
-  TextInput,
-} from 'react-native';
-import React, {useState} from 'react';
-import uuid from 'react-native-uuid';
-import Colors from '../../constants/Colors';
+import {ScrollView, StyleSheet, View} from 'react-native';
+import React from 'react';
+import {StorySlider} from '../../components';
+import {postType, posts} from '../../shared/post/postData';
+import {Post} from '../../shared';
 
-interface todoType {
-  id: string | number[];
-  content: string;
-  isCompleted: boolean;
-}
 const HomeScreen = ({navigation}: any) => {
-  return <View>
-    <Text>Instagram home</Text>
-  </View>;
+  return (
+    <ScrollView>
+      <StorySlider />
+      <View style={styles.borderLine}></View>
+      <View style={styles.container}>
+        {posts.map((data: postType, i) => (
+          <Post key={i} data={data} />
+        ))}
+      </View>
+    </ScrollView>
+  );
 };
+
+const styles = StyleSheet.create({
+  borderLine: {
+    borderBottomWidth: 0.5,
+    borderBottomColor: '#eee',
+  },
+  container: {
+    paddingBottom: 10,
+  },
+});
 
 export default HomeScreen;
