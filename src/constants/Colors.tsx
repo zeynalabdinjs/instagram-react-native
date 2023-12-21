@@ -6,4 +6,5 @@ export default {
   light2: '#CFD6F6',
   invalid: '#ff3e52',
   confirm: '#06ce02',
+  blue: '#0095f6',
 };

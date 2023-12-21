@@ -9,10 +9,13 @@ import {
 import React, {useState} from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import LinearGradient from 'react-native-linear-gradient';
+import Colors from '@/constants/Colors';
 
 const {width: screenWidth, height: screenHeight} = Dimensions.get('window');
-const img =
+const img1 =
   'https://img.freepik.com/free-photo/confident-attractive-caucasian-guy-beige-pullon-smiling-broadly-while-standing-against-gray_176420-44508.jpg?w=1060&t=st=1703142547~exp=1703143147~hmac=45275d0dcb2e7b5f582809b03ed09f2fd64860bfb0af35203066743c4757991f';
+const img =
+  'https://images.ctfassets.net/lh3zuq09vnm2/1OO41kWzbKzcWVFrQF98F3/ca30793c490f74dcedae86347e04859c/Hotjar_reviews__what_120__real_user_reviews_say_about_Hotjar.jpg';
 const StorySlider = () => {
   const [data, setData] = useState([
     {
@@ -43,7 +46,6 @@ const StorySlider = () => {
       img,
       username: 'zeynalabdinjs',
     },
-
   ]);
 
   return (
@@ -58,9 +60,9 @@ const StorySlider = () => {
         style={styles.scrollView}>
         <View style={styles.slide}>
           <View style={styles.imageBackground}>
-            <Image source={{uri: img}} style={styles.image} />
+            <Image source={{uri: img1}} style={styles.image} />
             <View style={styles.addStoryIcon}>
-              <AntDesign name="pluscircle" size={20} color={"#0095f6"} />
+              <AntDesign name="pluscircle" size={20} color={'#0095f6'} />
             </View>
           </View>
           <Text style={styles.username}>Your story</Text>
@@ -110,16 +112,16 @@ const styles = StyleSheet.create({
     borderRadius: 50,
   },
   addStoryIcon: {
-    backgroundColor: "#fff",
+    backgroundColor: '#fff',
     borderRadius: 30,
     position: 'absolute',
     right: 3,
     bottom: 5,
     width: 25,
     height: 25,
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center"
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   imageBackground: {
     backgroundColor: '#fff',
@@ -129,6 +131,7 @@ const styles = StyleSheet.create({
   username: {
     marginTop: 'auto',
     fontSize: 12,
+    color: Colors.dark,
   },
 });
 
