@@ -4,9 +4,9 @@ import {
   View,
 } from 'react-native';
 import React from 'react';
-import {StorySlider} from '../../components';
-import {postType, posts} from '../../shared/post/postData';
-import {Post} from '../../shared';
+import {StorySlider} from '@/components';
+import {postType, posts} from '@/shared/post/postData';
+import {Post} from '@/shared';
 
 const HomeScreen = ({navigation}: any) => {
   return (

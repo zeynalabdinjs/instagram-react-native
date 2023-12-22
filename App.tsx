@@ -1,7 +1,7 @@
 import React from 'react';
 import Colors from './src/constants/Colors';
 import {Image, StyleSheet, View, useColorScheme} from 'react-native';
-import {HomeScreen, ProfileScreen} from './src/screens';
+import {DiscoveryScreen, HomeScreen, ProfileScreen} from './src/screens';
 import {
   Link,
   NavigationContainer,
@@ -72,7 +72,7 @@ function App(): React.JSX.Element {
         />
         <Tab.Screen
           name="Discovery"
-          component={HomeScreen}
+          component={DiscoveryScreen}
           options={{
             title: 'Discovery',
             tabBarIcon: ({focused, color, size}) => {
