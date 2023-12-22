@@ -1,4 +1,4 @@
-import {View, Text, TextInput, StyleSheet} from 'react-native';
+import {View, TextInput, StyleSheet} from 'react-native';
 import React from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
       height: 40,
       backgroundColor: '#eee',
       marginHorizontal: 10,
+      marginVertical: 10,
       borderRadius: 10,
       position: 'relative',
     },
