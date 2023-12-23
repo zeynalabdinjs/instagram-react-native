@@ -45,7 +45,12 @@ const Post = ({data}: {data: postType}) => {
           {data.more.like} likes
         </Text>
         <View>
-          <Text style={{color: Colors.dark, marginTop: 5}}>
+          <Text
+            style={{
+              color: Colors.dark,
+              marginTop: 5,
+              fontFamily: 'Poppins-Regular',
+            }}>
             <Text style={{fontWeight: 'bold', color: '#000'}}>
               {data.user.username}
             </Text>{' '}
@@ -79,8 +84,8 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   username: {
-    fontWeight: '500',
     color: '#000',
+    fontFamily: 'Poppins-Medium',
   },
   postBody: {
     width: '100%',
@@ -113,6 +118,7 @@ const styles = StyleSheet.create({
   dateText: {
     fontSize: 12,
     marginTop: 10,
+    fontFamily: 'Poppins-Regular',
   },
 });
 export default Post;

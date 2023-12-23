@@ -1,4 +1,4 @@
-package com.rntutorial
+package com.zeynalgram
 
 import android.app.Application
 import com.facebook.react.PackageList

@@ -12,26 +12,31 @@ const SearchInput = () => {
 };
 
 const styles = StyleSheet.create({
-    searchBox: {
-      flex: 1,
-      height: 40,
-      backgroundColor: '#eee',
-      marginHorizontal: 10,
-      marginVertical: 10,
-      borderRadius: 10,
-      position: 'relative',
-    },
-    searchInput: {
-      width: '100%',
-      height: '100%',
-      paddingLeft: 40,
-    },
-    searchIcon: {
-      position: "absolute",
-      left: 13,
-      top: 12,
-    }
-  });
+  searchBox: {
+    flex: 1,
+    height: 40,
+    backgroundColor: '#eee',
+    marginHorizontal: 10,
+    marginVertical: 10,
+    borderRadius: 10,
+    position: 'relative',
+    display: 'flex',
+    alignItems: 'center',
+  },
+  searchInput: {
+    marginTop: 3,
+    width: '100%',
+    height: '100%',
+    paddingLeft: 40,
+    fontFamily: 'Poppins-Regular',
+    textAlignVertical: 'center',
+    display: 'flex',
+  },
+  searchIcon: {
+    position: 'absolute',
+    left: 13,
+    top: 10,
+  },
+});
 
-  
 export default SearchInput;

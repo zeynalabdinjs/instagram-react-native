@@ -29,9 +29,22 @@ function App(): React.JSX.Element {
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
+          contentStyle: {
+            backgroundColor: '#fff',
+          },
         }}>
         <Stack.Screen name="TabNavigator" component={TabNavigator} />
-        <Stack.Screen name="Detail" component={PostDetail} />
+        <Stack.Screen
+          name="Detail"
+          component={PostDetail}
+          options={{
+            headerShown: true,
+            headerTitle: '@zeynalabdinjs',
+            headerTitleStyle: {
+              fontFamily: 'Poppins-Medium',
+            },
+          }}
+        />
       </Stack.Navigator>
     );
   };
@@ -132,6 +145,7 @@ function App(): React.JSX.Element {
               />
             );
           },
+          headerLeft: () => '',
         }}
       />
     </Tab.Navigator>
