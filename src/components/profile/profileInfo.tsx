@@ -44,13 +44,13 @@ const ProfileInfo = () => {
               name="link-2"
               color={Colors.blue}
               size={18}
-              onPress={() => Linking.openURL('https://zeynalabdin.vercel.com')}
+              onPress={() => Linking.openURL('https://zeynalabdin.vercel.app')}
             />
           </View>
           <Text
-            onPress={() => Linking.openURL('https://zeynalabdin.vercel.com')}
+            onPress={() => Linking.openURL('https://zeynalabdin.vercel.app')}
             style={styles.url}>
-            https://zeynalabdin.vercel.com
+            https://zeynalabdin.vercel.app
           </Text>
         </View>
       </View>

@@ -103,14 +103,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginRight: 5,
     marginLeft: 5,
-    height: 108,
+    height: 102,
   },
   image: {
     height: 70,
     aspectRatio: 1 / 1,
     resizeMode: 'cover',
     borderRadius: 50,
-    
   },
   addStoryIcon: {
     backgroundColor: '#fff',
@@ -133,7 +132,7 @@ const styles = StyleSheet.create({
     marginTop: 'auto',
     fontSize: 12,
     color: Colors.dark,
-    fontFamily: "Manrope-Regular"
+    fontFamily: "Manrope-Medium"
   },
 });
 

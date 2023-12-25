@@ -49,7 +49,7 @@ const Post = ({data}: {data: postType}) => {
             style={{
               color: Colors.dark,
               marginTop: 5,
-              fontFamily: 'Manrope-Medium',
+              fontFamily: 'Manrope-Regular',
             }}>
             <Text style={{fontWeight: 'bold', color: '#000'}}>
               {data.user.username}
