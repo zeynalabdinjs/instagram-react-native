@@ -7,4 +7,6 @@ export default {
   invalid: '#ff3e52',
   confirm: '#06ce02',
   blue: '#0095f6',
+  black: "#000",
+  white: "#fff"
 };
