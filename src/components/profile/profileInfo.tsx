@@ -58,12 +58,12 @@ const ProfileInfo = () => {
       <View style={styles.footerContainer}>
         <View style={styles.footerButtons}>
           <TouchableOpacity style={styles.followBtn}>
-            <Text style={{color: '#fff', fontFamily: 'Poppins-Medium'}}>
+            <Text style={{color: '#fff', fontFamily: 'Manrope-Medium'}}>
               Follow
             </Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.msgBtn}>
-            <Text style={{color: Colors.black, fontFamily: 'Poppins-Medium'}}>
+            <Text style={{color: Colors.black, fontFamily: 'Manrope-Medium'}}>
               Message
             </Text>
           </TouchableOpacity>
@@ -104,25 +104,25 @@ const styles = StyleSheet.create({
     gap: -5,
   },
   textValue: {
-    fontFamily: 'Poppins-SemiBold',
+    fontFamily: 'Manrope-Bold',
     color: Colors.black,
     fontSize: 18,
   },
   textLabel: {
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'Manrope-Medium',
     color: Colors.black,
     fontSize: 14,
+    marginTop: 2,
   },
   // body
   bodyContainer: {},
   fullname: {
-    fontFamily: 'Poppins-SemiBold',
+    fontFamily: 'Manrope-SemiBold',
     color: Colors.black,
     marginTop: 5,
     fontSize: 14,
   },
   profession: {
-    marginTop: -5,
     fontSize: 14,
   },
   description: {
@@ -136,7 +136,6 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     position: 'relative',
     paddingVertical: 5,
-    marginTop: -4,
   },
   url: {
     color: Colors.blue,

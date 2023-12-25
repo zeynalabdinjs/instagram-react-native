@@ -42,7 +42,7 @@ function App(): React.JSX.Element {
             headerShown: true,
             headerTitle: '@zeynalabdinjs',
             headerTitleStyle: {
-              fontFamily: 'Poppins-Medium',
+              fontFamily: 'Manrope-Bold',
             },
           }}
         />
@@ -165,7 +165,7 @@ function App(): React.JSX.Element {
                 />
                 <Text
                   style={{
-                    fontFamily: 'Poppins-Bold',
+                    fontFamily: 'Manrope-ExtraBold',
                     fontSize: 18,
                     color: Colors.dark,
                     paddingLeft: 20,

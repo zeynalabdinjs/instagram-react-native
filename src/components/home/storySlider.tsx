@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
     marginTop: 'auto',
     fontSize: 12,
     color: Colors.dark,
-    fontFamily: "Poppins-Regular"
+    fontFamily: "Manrope-Regular"
   },
 });
 

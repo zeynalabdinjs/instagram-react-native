@@ -49,7 +49,7 @@ const Post = ({data}: {data: postType}) => {
             style={{
               color: Colors.dark,
               marginTop: 5,
-              fontFamily: 'Poppins-Regular',
+              fontFamily: 'Manrope-Medium',
             }}>
             <Text style={{fontWeight: 'bold', color: '#000'}}>
               {data.user.username}
@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
   },
   username: {
     color: '#000',
-    fontFamily: 'Poppins-Medium',
+    fontFamily: 'Manrope-Bold',
   },
   postBody: {
     width: '100%',
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
   dateText: {
     fontSize: 12,
     marginTop: 10,
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'Manrope-Medium',
   },
 });
 export default Post;
