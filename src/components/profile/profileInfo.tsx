@@ -14,7 +14,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const ProfileInfo = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <View style={styles.headContainer}>
         <Image src={profileImg2} style={styles.profileImg} />
         <View style={styles.textContainer}>
@@ -81,6 +81,9 @@ const ProfileInfo = () => {
 };
 
 const styles = StyleSheet.create({
+  container: {
+    padding: 20,
+  },
   /// header
   headContainer: {
     display: 'flex',
