@@ -106,12 +106,12 @@ const styles = StyleSheet.create({
   textValue: {
     fontFamily: 'Poppins-SemiBold',
     color: Colors.black,
-    fontSize: 20,
+    fontSize: 18,
   },
   textLabel: {
     fontFamily: 'Poppins-Regular',
     color: Colors.black,
-    fontSize: 16,
+    fontSize: 14,
   },
   // body
   bodyContainer: {},
@@ -119,14 +119,14 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-SemiBold',
     color: Colors.black,
     marginTop: 5,
-    fontSize: 16,
+    fontSize: 14,
   },
   profession: {
     marginTop: -5,
-    fontSize: 16,
+    fontSize: 14,
   },
   description: {
-    fontSize: 16,
+    fontSize: 14,
     color: '#000',
   },
   urlContainer: {
@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
     color: Colors.blue,
     position: 'relative',
     paddingLeft: 23,
-    fontSize: 16,
+    fontSize: 14,
   },
   urlIcon: {
     position: 'absolute',
