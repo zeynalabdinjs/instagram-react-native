@@ -83,6 +83,7 @@ const ProfileInfo = () => {
 const styles = StyleSheet.create({
   container: {
     padding: 20,
+    paddingBottom: 15
   },
   /// header
   headContainer: {
