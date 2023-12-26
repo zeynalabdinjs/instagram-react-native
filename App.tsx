@@ -1,11 +1,10 @@
 import React from 'react';
 import Colors from './src/constants/Colors';
 import {Image, StyleSheet, Text, View, useColorScheme} from 'react-native';
-import {DiscoveryScreen, HomeScreen, ProfileScreen} from './src/screens';
+import {CameraScreen, DiscoveryScreen, HomeScreen, ProfileScreen} from './src/screens';
 import {
   Link,
   NavigationContainer,
-  DefaultTheme,
   useNavigation,
 } from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
@@ -112,10 +111,10 @@ function App(): React.JSX.Element {
           }}
         />
         <Tab.Screen
-          name="new-post"
-          component={HomeScreen}
+          name="Camera"
+          component={CameraScreen}
           options={{
-            title: 'New Post',
+            title: 'Camera',
             tabBarIcon: ({focused, color, size}) => {
               return (
                 <FontAwesome name="plus-square-o" size={size} color={color} />
